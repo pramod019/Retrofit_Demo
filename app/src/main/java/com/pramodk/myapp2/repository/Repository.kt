@@ -5,7 +5,8 @@ import com.pramodk.myapp2.model.Post
 import retrofit2.Response
 
 class Repository {
-    suspend fun getPost():Response<Post>{
+    suspend fun getPost():Response<List<Post>>{
         return RetrofitInstance.api.getPosts()
     }
+
 }
